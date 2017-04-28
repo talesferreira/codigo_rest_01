@@ -1,0 +1,14 @@
+unit Cliente;
+
+interface
+Type
+TCliente = class
+  Public
+  property Id: Integer;
+  Property Nome: String;
+
+end;
+
+implementation
+
+end.

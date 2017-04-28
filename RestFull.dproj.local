@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/04/25 10:34:19.753,=C:\Users\tferrei\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/25 10:35:56.264,E:\Projetos Tales\REST\Cliente\uPrincipal.pas=C:\Users\tferrei\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/25 10:35:56.264,E:\Projetos Tales\REST\Cliente\uPrincipal.fmx=C:\Users\tferrei\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2017/04/25 10:36:04.384,E:\Projetos Tales\REST\RestFull.dproj=C:\Users\tferrei\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/04/25 11:04:39.693,=E:\Projetos Tales\REST\Server\Cliente.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/04/25 09:39:52.598,=E:\Projetos Tales\REST\Server\FormUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:39:52.764,=E:\Projetos Tales\REST\Server\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:40:01.826,=E:\Projetos Tales\REST\Server\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:40:01.934,=E:\Projetos Tales\REST\Server\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:40:06.859,=E:\Projetos Tales\REST\Server\js\base64.js</Transaction>
+    <Transaction>2017/04/25 09:40:06.912,=E:\Projetos Tales\REST\Server\js\ServerFunctionExecutor.js</Transaction>
+    <Transaction>2017/04/25 09:40:06.942,=E:\Projetos Tales\REST\Server\js\json2.js</Transaction>
+    <Transaction>2017/04/25 09:40:06.971,=E:\Projetos Tales\REST\Server\js\CallbackFramework.js</Transaction>
+    <Transaction>2017/04/25 09:40:07.003,=E:\Projetos Tales\REST\Server\js\ServerFunctions.js</Transaction>
+    <Transaction>2017/04/25 09:40:07.020,=E:\Projetos Tales\REST\Server\js\base64-min.js</Transaction>
+    <Transaction>2017/04/25 09:40:07.039,=E:\Projetos Tales\REST\Server\js\json2-min.js</Transaction>
+    <Transaction>2017/04/25 09:40:07.064,=E:\Projetos Tales\REST\Server\js\ServerFunctionExecutor-min.js</Transaction>
+    <Transaction>2017/04/25 09:40:07.083,=E:\Projetos Tales\REST\Server\js\CallbackFramework-min.js</Transaction>
+    <Transaction>2017/04/25 09:40:49.535,E:\Projetos Tales\REST\Server\uPrincipal.dfm=E:\Projetos Tales\REST\Server\FormUnit1.dfm</Transaction>
+    <Transaction>2017/04/25 09:40:49.535,E:\Projetos Tales\REST\Server\uPrincipal.pas=E:\Projetos Tales\REST\Server\FormUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:40:57.333,E:\Projetos Tales\REST\Server\uWM.pas=E:\Projetos Tales\REST\Server\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:40:57.333,E:\Projetos Tales\REST\Server\uWM.dfm=E:\Projetos Tales\REST\Server\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2017/04/25 09:41:12.582,E:\Projetos Tales\REST\Server\uSC.pas=E:\Projetos Tales\REST\Server\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:41:12.582,E:\Projetos Tales\REST\Server\uSC.dfm=E:\Projetos Tales\REST\Server\ServerContainerUnit1.dfm</Transaction>
+    <Transaction>2017/04/25 09:41:26.872,E:\Projetos Tales\REST\Server\uSM.dfm=E:\Projetos Tales\REST\Server\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2017/04/25 09:41:26.872,E:\Projetos Tales\REST\Server\uSM.pas=E:\Projetos Tales\REST\Server\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/04/25 09:44:29.652,=E:\Projetos Tales\REST\Server\Unit1.pas</Transaction>
+    <Transaction>2017/04/25 09:44:48.314,E:\Projetos Tales\REST\Server\Cliente.pas=E:\Projetos Tales\REST\Server\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

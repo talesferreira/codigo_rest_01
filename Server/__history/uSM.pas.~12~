@@ -1,0 +1,65 @@
+unit uSM;
+
+interface
+
+uses System.SysUtils, System.Classes, System.Json,
+    Datasnap.DSServer, Datasnap.DSAuth, DataSnap.DSProviderDataModuleAdapter,
+    REST.Json, Cliente;
+
+type
+{$METHODINFO ON}
+  TServerMethods1 = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function Clientes:TJSONObject; //Método GET
+    function acceptClientes(AId: Integer):TJSONValue;  //Método PUT
+    function cancelClientes(AId: Integer):TJSONValue;  //Método DELETE
+    function updateClientes(TObjJSON: TJSONObject): TJSONValue;  //Método POST
+  end;
+{$METHODINFO OFF}
+
+implementation
+
+
+{$R *.dfm}
+
+
+
+
+{ TServerMethods1 }
+
+function TServerMethods1.acceptClientes(AId: Integer): TJSONValue;
+begin
+  Result := TJSONString.Create('Alterando o cliente: ' + AId.ToString);
+end;
+
+function TServerMethods1.cancelClientes(AId: Integer): TJSONValue;
+begin
+  Result := TJSONString.Create('Deletando o cliente: ' + AId.ToString);
+end;
+
+function TServerMethods1.Clientes: TJSONObject;
+Var vCliente : TCliente;
+begin
+  vCliente := TCliente.Create;
+  //vCliente := TCliente.Create(Self);
+  try
+    vCliente.Id := 1;
+    vCliente.Nome := 'Teste teste';
+    Result := TJson.ObjectToJsonObject(vCliente);
+  finally
+    vCliente.Free;
+  end;
+end;
+
+
+function TServerMethods1.updateClientes(TObjJSON: TJSONObject): TJSONValue;
+Var vCliente : TCliente;
+begin
+  vCliente := TJson.JsonToObject<TCliente>(TObjJSON.ToJSON);
+end;
+
+end.
+

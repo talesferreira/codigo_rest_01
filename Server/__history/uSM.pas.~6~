@@ -1,0 +1,45 @@
+unit uSM;
+
+interface
+
+uses System.SysUtils, System.Classes, System.Json,
+    Datasnap.DSServer, Datasnap.DSAuth, DataSnap.DSProviderDataModuleAdapter,
+    REST.Json, Cliente;
+
+type
+{$METHODINFO ON}
+  TSM = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function GetClientes:TJSONObject;
+  end;
+{$METHODINFO OFF}
+
+implementation
+
+
+{$R *.dfm}
+
+
+
+
+{ TServerMethods1 }
+
+function TSM.GetClientes: TJSONObject;
+Var vCliente : TCliente;
+begin
+  vCliente := TCliente.Create;
+  //vCliente := TCliente.Create(Self);
+  try
+    vCliente.Id := 1;
+    vCliente.Nome := 'Teste teste';
+    Result := TJson.ObjectToJsonObject(vCliente);
+  finally
+    vCliente.Free;
+  end;
+end;
+
+end.
+

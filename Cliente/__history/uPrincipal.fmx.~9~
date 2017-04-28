@@ -1,0 +1,122 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 97.000000000000000000
+    Height = 32.000000000000000000
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Width = 233.000000000000000000
+    Height = 32.000000000000000000
+  end
+  object Button1: TButton
+    Height = 33.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 5
+    Text = 'Get - Selecionar'
+    Width = 185.000000000000000000
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Height = 185.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 280.000000000000000000
+    TabOrder = 7
+    Width = 329.000000000000000000
+  end
+  object Button2: TButton
+    Height = 33.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 160.000000000000000000
+    TabOrder = 4
+    Text = 'Post - Incluir'
+    Width = 185.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Height = 33.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 3
+    Text = 'Put - Alterar'
+    Width = 185.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Height = 33.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 240.000000000000000000
+    TabOrder = 2
+    Text = 'Delete - Excluir'
+    Width = 185.000000000000000000
+    OnClick = Button4Click
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'http://localhost:211/datasnap/rest/TServerMethods1/Clientes'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 296
+    Top = 8
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Method = rmPOST
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        name = 'body'
+        Options = [poDoNotEncode]
+        ContentType = ctAPPLICATION_JSON
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 296
+    Top = 64
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'text/html'
+    Left = 296
+    Top = 112
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    FieldDefs = <>
+    Left = 120
+    Top = 24
+  end
+  object FDMemTable1: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 144
+    Top = 72
+  end
+end
